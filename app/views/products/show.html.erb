@@ -5,7 +5,7 @@
     </div>
     <div class="col-sm-12 col-md-6">
       <h1><%= @product.name %></h1>
-      <p>Some awesome description of our amazing bike.</p>
+      <p>Some awesome description of our amazing bikes.</p>
       <p>Amount: <%= humanized_money_with_symbol(@product.price) %></p>
 
       <%= form_tag orders_path do %>
