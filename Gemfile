@@ -67,3 +67,4 @@ gem 'money-rails'
 gem 'stripe'
 gem 'stripe_event'
 gem 'ngrok'
+gem "serviceworker-rails"
