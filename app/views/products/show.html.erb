@@ -3,7 +3,7 @@
 
     <div class="col-sm-12 col-md-6">
       <% @product.photos.each do |photo| %>
-          <%#= cl_image_tag photo.key, height: 300, width: 400, crop: :fill, radius: 60 %>
+          <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill, radius: 60 %>
         <% end %>
     </div>
     <div class="col-sm-12 col-md-6">
