@@ -2,9 +2,10 @@ class CreateProducts < ActiveRecord::Migration[6.1]
   def change
     create_table :products do |t|
       t.string :sku
-      t.string :name
-      t.references :category, null: false, foreign_key: true
-      t.string :photo_url
+      t.string :localization
+      t.float :price
+      t.string :bike_condition
+      t.boolean :available, default: true
 
       t.timestamps
     end
