@@ -1,0 +1,16 @@
+<div class="row justify-content-center">
+  <div class="col-md-6 mb-5">
+<%= simple_form_for(@product) do |f| %>
+  <%= f.input :name, label: "Your bike model" %>
+  <%= f.input :category, label: "Category" %>
+  <%= f.input :price_cents, label: "Price"  %>
+  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+  <%= f.submit %>
+<% end %>
+</div>
+<hr>
+
+<div class="container mt-4">
+  <%= link_to "Back", products_path, class:"btn btn-secondary" %>
+</div>
+</div>
