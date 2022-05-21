@@ -1,2 +1,14 @@
 // Import page-specific CSS files here.
 @import "home";
+
+// .card {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   grid-gap: 16px;
+// }
+
+.card-img-top {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}

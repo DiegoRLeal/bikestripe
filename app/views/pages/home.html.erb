@@ -1,2 +1,33 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.rickysbicycletours.co.uk/wp-content/uploads/2019/04/Rickys-Bicycle-Tours-Edinurgh-Mountain-Adventure-City-Bike-Hire-ADVENTURE-TOURS-SLIDER.jpg);">
+  <div class="container">
+    <h1>Rent a Bike brings <strong>provide the bike you need</strong>!</h1>
+    <p>Enjoy a weekend tour without having to buy a bike.</p>
+    <a class="btn btn-primary" href="/products">Rent now</a>
+  </div>
+</div>
+
+<div class="container mb-5">
+<h4>------------------------------------------------- Some bikes you'll find <strong>here.</strong> ------------------------------------------------</h4>
+</div>
+
+<div class="container justify-content-center mb-5">
+   <div class="cards">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://imgs.ponto.com.br/55005633/1xg.jpg)">
+     Caloi
+     </div>
+     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://imgs.ponto.com.br/2356897/1xg.jpg)">
+     Monark
+     </div>
+      <%# <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images-americanas.b2w.io/produtos/01/00/img/2842413/2/2842413240_1SZ.jpg)">
+     Eletric
+     </div> %>
+     <div class="card-category">
+     <span><%= link_to 'Log in to see more', new_user_session_path, class:"btn btn-info" %> </span>
+     </div>
+
+</div>
+
+  </div>
+<div class="container mb-5">
+<h4>-------------------------------------------------------------------------------------------------------------------------------</h4>
+</div>
