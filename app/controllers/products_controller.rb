@@ -39,7 +39,7 @@ class ProductsController < ApplicationController
   end
 
   def destroy
-    #authorize @product
+    @product = Product.find(params[:id])
     @product.destroy
     redirect_to products_url, notice: "Product was sucessfully destroyed."
   end
@@ -51,6 +51,6 @@ class ProductsController < ApplicationController
   end
 
   def product_params
-    params.require(:product).permit(:bike, :localization, :price, :bike_condition, photos: [])
+    params.require(:product).permit(:sku, :localization, :price, :bike_condition, photos: [])
   end
 end
